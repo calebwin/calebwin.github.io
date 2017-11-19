@@ -1,0 +1,119 @@
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
+body {
+    background-color: #eee;
+}
+.page_title {
+    color: #343a38;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 10em;
+    font-family: Raleway;
+    font-weight: 800;
+    animation: 1s infinite alternate text-effect-2-color-slide-out;
+}
+@keyframes text-effect-2-color-slide-out {
+    from {
+        text-shadow: -0.01em 0 0 #ffb7b7,  0.01em 0 0 #93ffda;
+    }
+    to {
+        text-shadow: -0.05em 0 0 #ffb7b7,  0.05em 0 0 #93ffda;
+    }
+}
+.page_subtitle {
+    color: #343a38;
+    text-align: center;
+    margin-top: -60px;
+    font-size: 5em;
+    font-family: Raleway;
+    font-weight: 800;
+    letter-spacing: 0.3vw;
+}
+.page_info_text {
+    color: #343a38;
+    font-size: 1em;
+    font-family: monospace;
+    line-height: 1.5em;
+    padding: 5px;
+    margin: 0px;
+}
+.language-list {
+    line-height: 2.5em !important;
+    text-align: center;
+}
+.self-description {
+    text-align: center;
+    font-size: 1.8em;
+}
+code {
+    background-color: #d2d2d2;
+}
+.page_info_top {
+    border-bottom: solid #343a38 2px;
+    padding:15px;
+    margin-bottom: 20px;
+}
+.page_info_container {
+    background-color: #e1e1e1;
+    padding:15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.page_footer {
+    padding:15px;
+    font-size: 0.7em;
+    font-family: Merriweather;
+    text-align: center;
+    margin-top : -25px;
+    margin-bottom : 25px;
+}
+.card, .key-word {
+	transition: all .2s ease-in-out;
+}
+.card:hover {
+    cursor: pointer;
+    border-left: solid #343a38 2px;
+    background-color: #93ffda;
+    padding-left: 15px;
+}
+.card:hover .key-word {
+    border-bottom: solid #343a38 1px;
+}
+.title {
+    margin-bottom: -10px;
+    color: #343a38;
+    font-size: 3em;
+    font-family: Unica One;
+    font-weight: 600;
+}
+.arrow {
+    opacity: 0;
+	transition: all .2s ease-in-out;
+}
+.card:hover .arrow {
+    opacity: 1;
+}
+.title-2 {
+    margin-bottom: 10px;
+    color: #343a38;
+    font-size: 1.0em;
+    font-family: Raleway;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.body {
+    color: #343a38;
+    font-size: 1em;
+    font-family: Merriweather;
+}
+.dot-line {
+    text-align: center;
+    font-weight: 800;
+    font-family: Abril Fatface;
+    font-size: 20px;
+    line-height: 25px;
+}
