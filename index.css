@@ -1,119 +1,133 @@
+/*@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+  height: 100%;
+}
+
+body {
+  /*margin: 0 auto;
+  max-width: 70em;*/
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 16px;
+  background-color: #fce2b3;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+  height: 100%;
+}
+
+.title {
+  /*margin-left: 85px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding-top: 20px;*/
+}
+
+p {
+  /*margin-top: 0px;*/
+}
+
+footer {
+  bottom: 50px;
+  position: fixed;
+  line-height: 10px;
+}
+
+a {
+  text-decoration: none;
+  /*transition: all .2s ease-in-out;*/
+  animation: linkcolor 1s infinite;
+  -webkit-animation: linkcolor 1s infinite;
+}
+
+a:link {
+  color: #e81c4f;
+}
+
+a:visited {
+  color: #e81c4f;
+}
+
+a:hover {
+  color: #e81c4f;
+  text-decoration: underline;
+  /*border-bottom: solid #e81c4f 1px;*/
+}
+
 ::selection {
   background: #ffb7b7; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
   background: #ffb7b7; /* Gecko Browsers */
 }
+
 body {
-    background-color: #eee;
+  /*font-family: "Comic Sans MS", "Comic Sans", cursive;*/
+  /*font-family: 'Lato', sans-serif;*/
 }
-.page_title {
-    color: #343a38;
-    text-align: center;
-    margin-top: 40px;
-    font-size: 10em;
-    font-family: Raleway;
-    font-weight: 800;
-    animation: 1s infinite alternate text-effect-2-color-slide-out;
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-@keyframes text-effect-2-color-slide-out {
-    from {
-        text-shadow: -0.01em 0 0 #ffb7b7,  0.01em 0 0 #93ffda;
+
+section {
+  margin-left: 85px;
+  margin-top: 20px;
+
+  /*padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  padding-left: 15px;*/
+  /*border-left: solid 1px #ccc;*/
+  transition: all .01s ease-in-out;
+
+  /*animation: bgcolor 1s infinite;
+  animation-direction: alternate;
+  -webkit-animation: bgcolor 1s infinite;
+  -webkit-animation-direction: alternate;*/
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #eee
     }
-    to {
-        text-shadow: -0.05em 0 0 #ffb7b7,  0.05em 0 0 #93ffda;
+    50% {
+        background-color: #fff
+    }
+    100% {
+        background-color: #eee
     }
 }
-.page_subtitle {
-    color: #343a38;
-    text-align: center;
-    margin-top: -60px;
-    font-size: 5em;
-    font-family: Raleway;
-    font-weight: 800;
-    letter-spacing: 0.3vw;
+
+@keyframes linkcolor {
+    0% {
+        color: #e81c4f
+    }
+    /*50% {
+        color: #e8771c
+    }*/
+    100% {
+        color: #e81c4f
+    }
 }
-.page_info_text {
-    color: #343a38;
-    font-size: 1em;
-    font-family: monospace;
-    line-height: 1.5em;
-    padding: 5px;
-    margin: 0px;
+
+.right-side {
+  position: absolute;
+  left: 235px;
+  width: 700px;
 }
-.language-list {
-    line-height: 2.5em !important;
-    text-align: center;
+
+.pre-footer {
+  margin-top: 50px;
 }
-.self-description {
-    text-align: center;
-    font-size: 1.8em;
+
+.footer {
+  margin-bottom: 50px;
 }
-code {
-    background-color: #d2d2d2;
-}
-.page_info_top {
-    border-bottom: solid #343a38 2px;
-    padding:15px;
-    margin-bottom: 20px;
-}
-.page_info_container {
-    background-color: #e1e1e1;
-    padding:15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-.page_footer {
-    padding:15px;
-    font-size: 0.7em;
-    font-family: Merriweather;
-    text-align: center;
-    margin-top : -25px;
-    margin-bottom : 25px;
-}
-.card, .key-word {
-	transition: all .2s ease-in-out;
-}
-.card:hover {
-    cursor: pointer;
-    border-left: solid #343a38 2px;
-    background-color: #93ffda;
-    padding-left: 15px;
-}
-.card:hover .key-word {
-    border-bottom: solid #343a38 1px;
-}
-.title {
-    margin-bottom: -10px;
-    color: #343a38;
-    font-size: 3em;
-    font-family: Unica One;
-    font-weight: 600;
-}
-.arrow {
-    opacity: 0;
-	transition: all .2s ease-in-out;
-}
-.card:hover .arrow {
-    opacity: 1;
-}
-.title-2 {
-    margin-bottom: 10px;
-    color: #343a38;
-    font-size: 1.0em;
-    font-family: Raleway;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-.body {
-    color: #343a38;
-    font-size: 1em;
-    font-family: Merriweather;
-}
-.dot-line {
-    text-align: center;
-    font-weight: 800;
-    font-family: Abril Fatface;
-    font-size: 20px;
-    line-height: 25px;
+
+.intro {
+  /*margin-bottom: 50px;*/
 }
